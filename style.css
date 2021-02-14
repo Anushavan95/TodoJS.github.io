@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background: #001724;
+  background: linear-gradient(90deg, #001724 0%, #020024 0%, #31389c 0%, #1a7b9a 60%, #0453c0 76%, #0081ff 100%, #073a99 100%);
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 30px;
+  margin: 5% 0;
+}
+
+.todo-section {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#listValue {
+  width: 80%;
+  padding: 9px 0;
+  border-radius: 5px;
+  border: none;
+  text-indent: 5px;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: aqua;
+}
+
+.important {
+  font-weight: bold;
+  color: #c90011;
+}
+
+.delete {
+  text-decoration: line-through;
+  background-color: #646464;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  padding: 5px;
+  font-size: 30px;
+  margin: 5px;
+  position: relative;
+  background-color: #dfdcdc;
+  transition: all 0.5s;
+  font-family: sans-serif;
+}
+ul li:hover {
+  background-color: #8a8a8a;
+}
+ul span {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  padding: 0 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #7070ed;
+  transition: all 0.5s;
+}
+ul span:hover {
+  background-color: blue;
+}
+ul .close {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  padding: 0 11px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #eb2748;
+  transition: all 0.5s;
+}
+ul .close:hover {
+  background-color: #c90011;
+}
+
+.new {
+  display: flex;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .todo-section {
+    width: 80%;
+  }
+
+  .new {
+    font-size: 20px;
+  }
+
+  #listValue {
+    width: 68%;
+    font-size: 14px;
+  }
+}
